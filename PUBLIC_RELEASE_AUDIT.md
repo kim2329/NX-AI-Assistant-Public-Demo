@@ -1,36 +1,34 @@
 # Public Release Audit
 
-**Decision: SAFE_TO_PUBLISH**
+**Decision: SAFE_TO_PUBLISH for the exact presentation files listed below.**
 
-This clean showcase repository was assembled from an explicit presentation-only allowlist. The existing development repository and its Git history were not copied or changed.
+This M2 showcase is prepared on a dedicated branch from the existing public repository history. No private implementation history or frozen private M2 release files were copied into this repository.
 
-## Included in this repository
+## Included presentation files
 
-- README.md
-- PUBLIC_RELEASE_AUDIT.md
-- docs/architecture-overview.md
-- docs/demo-flow.md
-- docs/roadmap.md
-- examples/example-prompts.md
-- assets/architecture/overview.svg
-- assets/screenshots/createblock-analysis.png
-- assets/screenshots/createblock-completed.png
+- `README.md`
+- `PUBLIC_RELEASE_AUDIT.md`
+- `docs/architecture-overview.md`
+- `docs/demo-flow.md`
+- `docs/roadmap.md`
+- `examples/example-prompts.md`
+- `assets/architecture/overview.svg`
+- `assets/demo-preview/NX_AI_Assistant_M2_demo_showcase.mp4`
+- `assets/demo-preview/thumbnail.jpg`
+- `assets/screenshots/createblock-analysis.png`
+- `assets/screenshots/createblock-completed.png`
 
-The MP4 is distributed as a GitHub Release asset and is not stored in this repository's Git history.
+## Review checks
 
-## Audit checks
-
-- Reviewed each included text file against the presentation-only scope.
-- Searched included text for credentials, local machine paths, private repository references, internal endpoints, and implementation details; none were found.
-- Visually reviewed representative frames from the selected demo recording. The frames show the assistant workflow and resulting block; no username, local path, or company project data was visible after the connection-status label was masked in the public copy.
-- The release video is a metadata-cleaned copy with a narrow status-line redaction. It contains the recorded product demonstration only.
-- Confirmed that the new repository starts with a fresh Git history. No development repository content or prior Git history is present.
-- No license granting use of the private implementation is included.
-
-## Explicit exclusions
-
-No runtime or agent source, NXOpen execution implementation, production skill implementation, proprietary binaries, environment files, credentials, logs, or private project history is included.
+- Reviewed the presentation text for internal filesystem paths, credentials, private evidence records, and implementation details.
+- Reviewed the architecture diagram; it names only the user-requested high-level stages and does not show Platform or Agent internals.
+- Visually reviewed the M2 video and thumbnail. The public copy is trimmed before the recorder overlay, and masks the connection-status label and generated part-tab identifier.
+- No local paths, usernames, credentials, or machine-specific identifiers are visible in the M2 video copy.
+- The video copy has no audio and retains only a neutral showcase title in its metadata.
+- The new M2 material is presentation-only; no source code, binaries, environment configuration, deployment instructions, or private M2 release files are included.
+- Validation is stated as M2-L1 Real NX Modeling Core: PASS and M2-L2 Windows/WebView UI E2E: CANDIDATE_PASS. The full M2 UI E2E is not claimed as PASS.
+- The existing v0.1.0 public demo assets and release history remain available and unchanged.
 
 ## Scope note
 
-“SAFE_TO_PUBLISH” applies only to the exact files listed above and the reviewed video asset. Any future additions require a new review.
+“SAFE_TO_PUBLISH” applies only to the files listed above and the reviewed video copy. Any additional assets require a separate review.

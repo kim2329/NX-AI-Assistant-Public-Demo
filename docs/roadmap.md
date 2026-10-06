@@ -1,11 +1,5 @@
-# Roadmap
+# Scope
 
-These are possible future directions, not promises or current capabilities:
+This branch presents the frozen M2 showcase. Its verified public example is the multi-skill plate workflow described in the [demo flow](demo-flow.md).
 
-- Additional CAD skills
-- Multi-step modeling workflows
-- Configurable language-model providers
-- External agent integrations
-- Broader engineering workflow automation
-
-The public demo currently showcases one block-creation workflow in Siemens NX 2512.
+The public repository does not claim broader CAD coverage. Any later skills, integrations, or workflow expansion would need separate implementation and validation; none are implied by this showcase.
