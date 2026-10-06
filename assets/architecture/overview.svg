@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">NX AI Assistant high-level workflow</title>
+  <desc id="desc">A user request flows through the NX AI Assistant, intent and parameter parsing, a skill, a private NX automation runtime, and Siemens NX.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#64748b"/>
+    </marker>
+    <style>
+      .box { rx: 16; ry: 16; stroke-width: 2; }
+      .label { font: 600 19px 'Segoe UI', Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; fill: #0f172a; }
+      .muted { font: 15px 'Segoe UI', Arial, sans-serif; text-anchor: middle; fill: #475569; }
+    </style>
+  </defs>
+  <rect width="1200" height="280" fill="#f8fafc"/>
+  <g stroke="#64748b" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="180" y1="140" x2="225" y2="140"/>
+    <line x1="390" y1="140" x2="435" y2="140"/>
+    <line x1="600" y1="140" x2="645" y2="140"/>
+    <line x1="810" y1="140" x2="855" y2="140"/>
+    <line x1="1020" y1="140" x2="1065" y2="140"/>
+  </g>
+  <g>
+    <rect class="box" x="20" y="90" width="160" height="100" fill="#e0f2fe" stroke="#38bdf8"/>
+    <text class="label" x="100" y="140">User request</text>
+    <rect class="box" x="230" y="90" width="160" height="100" fill="#dbeafe" stroke="#60a5fa"/>
+    <text class="label" x="310" y="140">NX AI Assistant</text>
+    <rect class="box" x="440" y="90" width="160" height="100" fill="#ede9fe" stroke="#a78bfa"/>
+    <text class="label" x="520" y="128">Intent and</text><text class="label" x="520" y="154">parameters</text>
+    <rect class="box" x="650" y="90" width="160" height="100" fill="#dcfce7" stroke="#4ade80"/>
+    <text class="label" x="730" y="140">Skill</text>
+    <rect class="box" x="860" y="90" width="160" height="100" fill="#fef3c7" stroke="#f59e0b"/>
+    <text class="label" x="940" y="128">Private NX</text><text class="label" x="940" y="154">runtime</text>
+    <rect class="box" x="1070" y="90" width="110" height="100" fill="#e2e8f0" stroke="#94a3b8"/>
+    <text class="label" x="1125" y="140">Siemens NX</text>
+  </g>
+  <text class="muted" x="600" y="238">High-level product flow · private runtime internals are intentionally omitted</text>
+</svg>
