@@ -1,5 +1,8 @@
-# Scope
+# Roadmap
 
-This branch presents the frozen M2 showcase. Its verified public example is the multi-skill plate workflow described in the [demo flow](demo-flow.md).
+The current public release presents the frozen M6-G real-NX showcase.
 
-The public repository does not claim broader CAD coverage. Any later skills, integrations, or workflow expansion would need separate implementation and validation; none are implied by this showcase.
+- **M7 — Multi-Skill Agent:** planned expansion from the fixed Block workflow to coordinated modeling skills.
+- **M8 — Developer Platform:** planned public-facing developer capabilities.
+
+These are roadmap items, not capabilities claimed by this release. The current public demo remains limited to its documented workflow.

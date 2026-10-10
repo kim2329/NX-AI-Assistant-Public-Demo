@@ -1,7 +1,7 @@
 # Demonstrated Request
 
-The recording's natural-language request is shown here in English:
+The M6-G showcase uses this fixed natural-language Goal:
 
-> Create a 120 × 80 × 8 mm plate with four Ø6 through holes in a deterministic 2 × 2 layout and R3 fillets on all four corners.
+> Create a 100 × 50 × 20 mm block.
 
-This prompt maps to the specific M2 workflow in the [demo flow](../docs/demo-flow.md). It is an example of demonstrated scope, not a claim that arbitrary CAD prompts are supported.
+This example represents the bounded workflow demonstrated in [M6-G](../docs/showcase/M6_G_SHOWCASE.md). It does not imply support for arbitrary CAD requests.

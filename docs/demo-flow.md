@@ -1,20 +1,9 @@
-# Frozen M2 Demo Flow
+# M6-G Demo Flow
 
-The 13-second [M2 showcase video](../assets/demo-preview/NX_AI_Assistant_M2_demo_showcase.mp4) records the following flow in Siemens NX 2512.1700:
+The public [M6-G video](../demo/M6-G-demo.mp4) presents the fixed Goal and the resulting Block in a real NX 2512 viewport.
 
-**Natural-language request → Preview → CreateBlock → CreateHole → PatternHole → FilletEdges → Confirm → Real NX execution**
+**Natural-language Goal → Real NX execution → Block feature → Independent geometry verification**
 
-The demonstrated fixture is a 120 × 80 × 8 mm plate with four Ø6 through holes in a deterministic 2 × 2 layout and four R3 corner fillets.
+The demonstrated Goal is: Create a 100 × 50 × 20 mm block. The milestone summary reports an independently verified geometry result. The public video is a presentation edit; it is not a substitute for the private evidence records, which are not included.
 
-## What the preview shows
-
-The assistant presents an ordered Skill plan before execution. The seed hole is represented as a typed feature dependency for the hole pattern. A person reviews and confirms the plan before it mutates the NX model.
-
-## Result and validation
-
-The confirmed plan is executed in a live NX session. The resulting geometry is independently verified.
-
-- M2-L1 Real NX Modeling Core: PASS
-- M2-L2 Windows/WebView UI E2E: CANDIDATE_PASS
-
-The full M2 Windows/WebView UI E2E is not claimed as PASS. The video is a presentation recording and does not replace the validation evidence.
+See the [M6-G showcase](showcase/M6_G_SHOWCASE.md) for scope and limitations.

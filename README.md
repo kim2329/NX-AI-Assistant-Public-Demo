@@ -1,58 +1,54 @@
-# NX AI Assistant
+# NX AI Assistant Demo
 
-**Natural-language multi-step modeling for Siemens NX**
+**Natural language driven CAD automation prototype for NX.**
 
-Validated on **NX 2512.1700**
+M6-G public showcase · Real NX 2512
 
-[![Watch the M2 showcase](assets/demo-preview/thumbnail.jpg)](assets/demo-preview/NX_AI_Assistant_M2_demo_showcase.mp4)
+[![Watch the M6-G demo](demo/thumbnail.png)](demo/M6-G-demo.mp4)
 
-[Watch or download the 13-second M2 showcase video](assets/demo-preview/NX_AI_Assistant_M2_demo_showcase.mp4)
+[Watch the M6-G demo](demo/M6-G-demo.mp4) · [Showcase details](docs/showcase/M6_G_SHOWCASE.md)
 
-## M2 workflow
+## Overview
 
-**Natural-language request → Preview → CreateBlock → CreateHole → PatternHole → FilletEdges → Confirm → Real NX execution**
+This repository presents a bounded natural-language modeling workflow in Siemens NX. M6-G demonstrates a fixed Goal, real NX feature creation, and independent geometry verification. It is a public product showcase, not a release of the private engineering implementation.
 
-The request is reviewed as an ordered Skill plan before confirmation. The confirmed plan creates a real part in Siemens NX.
-
-## M2 fixture
-
-- 120 × 80 × 8 mm plate
-- Four Ø6 through holes in a deterministic 2 × 2 layout
-- Four R3 corner fillets
-
-## What M2 proves
-
-- An inspectable, ordered Skill plan
-- Human confirmation before model mutation
-- Typed feature dependency from the seed hole to its pattern
-- Real NX execution
-- Independent geometry verification
-
-## Validation
-
-- M2-L1 Real NX Modeling Core: PASS
-- M2-L2 Windows/WebView UI E2E: CANDIDATE_PASS
-
-The full M2 UI E2E is **not** claimed as PASS.
+**Demonstrated Goal:** Create a 100 × 50 × 20 mm block.
 
 ## Architecture
 
-![High-level M2 architecture](assets/architecture/overview.svg)
+![M6-G public architecture](docs/images/architecture.png)
 
-The diagram names public-facing stages and the execution boundary only. It does not expose Platform or Agent implementation details.
+See the [architecture notes](docs/architecture/M6_G_ARCHITECTURE.md) for the public workflow boundary.
+
+## Demo
+
+The short edited video pairs the demonstrated Goal with the resulting NX model. The public copy removes the recorder and desktop views, audio, and source metadata.
+
+## Achievement
+
+**M6-G: FROZEN**
+
+- Real NX 2512 execution
+- A natural-language Goal
+- CAD feature creation: one 100 × 50 × 20 mm block
+- Independent geometry verification
+
+The public repository contains a milestone summary and reviewed showcase media. Private evidence records are not included.
 
 ## Limitations
 
-- The public demo exposes a limited modeling workflow.
-- It is not yet a general-purpose natural-language CAD system.
-- Supported and tested NX version: **NX 2512.1700**.
+- The public demo exposes one limited modeling workflow.
+- It is not a general-purpose natural-language CAD system yet.
+- **Requires local NX2512 environment** to reproduce a live run.
+- The private runtime and implementation are not included.
 
-## Public/private boundary
+## Roadmap
 
-This repository is a presentation showcase. It contains documentation and reviewed demo media, not the private Platform or Agent implementation, proprietary automation or SDK implementation, private evidence records, or deployment materials.
+- **M7:** Multi-Skill Agent
+- **M8:** Developer Platform
 
-## License
+## Public boundary
 
-Copyright © 2026. All rights reserved. No license to use, copy, modify, or distribute implementation materials is granted by this showcase repository. Siemens and NX are trademarks of Siemens; this project is an independent demonstration.
+This repository contains presentation material only. It excludes the private Platform and Agent implementation, proprietary automation or SDK implementation, runtime binaries, real execution logs, private evidence records, .prt files, credentials, and machine-specific environment details.
 
-See [PUBLIC_RELEASE_AUDIT.md](PUBLIC_RELEASE_AUDIT.md) for the public-content review.
+See the [M6-G public release notes](docs/releases/M6_G_PUBLIC_DEMO.md) and [public content audit](PUBLIC_RELEASE_AUDIT.md).
